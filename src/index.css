@@ -1,0 +1,290 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main_bg: #500404;
+  --bg_in: #000000;
+  --text_1: #f6cd46;
+}
+
+body {
+  font-family: "Alice", serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fst {
+  background-color: var(--bg_in);
+}
+
+.fst_1 {
+  background-color: var(--main_bg);
+  height: 100%;
+}
+
+.img_cov {
+  width: 350px;
+  overflow: hidden;
+}
+
+.img_cov img {
+  /* height: 100%; */
+  width: 100%;
+  object-fit: cover;
+}
+
+.img_cov_2 {
+  width: 200px;
+  margin-left: -50px;
+  margin-top: 100px;
+}
+
+.img_cov_2 img {
+  width: 100%;
+}
+
+.fs_hd h1 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 72px;
+  font-family: "Alice", serif;
+
+}
+
+.fs_hd p {
+  font-size: 25px;
+  line-height: 33px;
+  color: var(--text_1);
+}
+
+.fs_form form {
+  border: 2px solid #ffffff;
+  width: 350px;
+}
+
+.fs_form .fs_i {
+  width: 300px;
+  height: 50px;
+  border: none;
+  padding: 2px 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.fs_form .fs_i::placeholder {
+  color: #500404;
+}
+
+.btn_cov button {
+  width: 300px;
+  height: 50px;
+  background-color: var(--main_bg);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.btn_cov button:hover {
+  filter: brightness(2);
+}
+
+.in_ch {
+  /* width: 15px !important; */
+  height: auto;
+  margin: auto;
+  vertical-align: bottom;
+  accent-color: var(--main_bg);
+}
+
+.sm {
+  font-size: 12px;
+  line-height: 5px !important;
+  
+}
+
+.txt_sd h3 {
+  color: var(--main_bg);
+  font-weight: 600;
+  font-family: "Alice", serif;
+  
+} 
+
+.txt_sd p {
+  color: var(--main_bg);
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.se_bgg {
+  background-color: var(--main_bg);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} 
+
+.se_img {
+  background-image: url("./assets/img/person.avif");
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.se_img img {
+  width: 90%;
+  border-radius: 50%;
+  animation: myAnim 15s infinite alternate;
+}
+
+@keyframes myAnim {
+	0% {
+		translate: 0;
+	}
+	25% {
+		transform: translate3d(1rem, 3rem, 0);
+    border-radius: 30% 70% 70% 30% / 30% 21% 79% 70% ;
+	}
+	50% {
+		transform: translate3d(-1rem, 3rem, 0);
+    border-radius: 30% 70% 70% 30% / 55% 76% 24% 45% ;
+	}
+
+	100% {
+		transform: translate3d(3rem, 3rem, 0);
+	}
+}
+
+.se_bgg h1 {
+  color: white;
+  font-family: "Alice", serif;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.thd_hd {
+  background-color: black;
+  text-align: center;
+  padding: 23px 0;
+}
+
+.thd_hd h1  {
+  color: white;
+  font-family: "Alice", serif;
+}
+
+.cd_sec {
+  background-color: white;
+  width: 90%;
+}
+
+.cd_cv {
+  text-align: left; 
+}
+
+.cd_hd {
+  position: relative;
+}
+
+.cd_hd::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  background-color: rgb(52, 47, 47);
+  height: 4px;
+  bottom: -20px;
+  
+}
+
+.cd_hd h2 {
+  font-size: 37px;
+  font-family: "Alice", serif;
+  color: var(--main_bg);
+}
+
+.cd_bd p {
+  font-size: 20px;
+  color: var(--main_bg);
+}
+
+.foth_cov {
+  background-color: var(--main_bg);
+  height: 700px;
+  background-color: #000000;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 10px ), repeating-linear-gradient( #50040455, #500404 );
+}
+
+.fo_t {
+  color: white;
+  font-family: "Alice", serif;
+  font-size: 40px;
+}
+
+.fo_btn button{
+  color: black;
+  background-color: white;
+  width: 80%;
+  padding: 13px 0;
+  border: none;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+.img_grid {
+  position: relative;
+}
+
+.img_f {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 10px;
+}
+
+.img_f img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.img_ff {
+  top: 90px;
+  left: 40%;
+  width: 300px;
+  height: 300px;
+}
+
+.img_fff {
+  top: 230px;
+  width: 250px;
+  height: 250px;
+  left: -100px;
+}
+
+.img_ft {
+  color: var(--text_1);
+  font-family: "Alice", serif;
+  font-size: 20px;
+}
+
+.ls_b.badge{
+  display: inline !important;
+  white-space: wrap;
+  text-align: center;
+}
