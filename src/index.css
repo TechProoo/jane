@@ -372,4 +372,10 @@ body {
     width: 350px;
     height: 350px;
   }
+
+  .ls_b.badge {
+    display: inline !important;
+    white-space: wrap !important;
+    text-align: center;
+}
 }
