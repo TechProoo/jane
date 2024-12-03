@@ -28,20 +28,20 @@ const Fourth = () => {
             <div className="col-md-6">
               <div className="img_grid ms-lg-5">
                 <div>
-                  <Fade direction="up" duration={2000}>
+                  <Fade direction="up" duration={3000}>
                     <div className="img_f ">
                       <span className="badge img_ft">More Travel</span>
                       <img src={Image4} className="img-fluid" alt="" />
                      
                     </div>
                   </Fade>
-                  <Fade direction="right" duration={2000}>
+                  <Fade direction="left" duration={2000}>
                     <div className="img_f img_ff">
                       <img src={Image2} className="img-fluid" alt="" />
                       <span className="badge img_ft">More Time</span>
                     </div>
                   </Fade>
-                  <Fade direction="left" duration={2000}>
+                  <Fade direction="up" duration={3000}>
                     <div className="img_f img_fff">
                       <img src={Image3} className="img-fluid" alt="" />
                       <span className="badge img_ft">More Freedom</span>

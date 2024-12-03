@@ -53,7 +53,6 @@ body {
   font-size: 55px;
   line-height: 72px;
   font-family: "Alice", serif;
-
 }
 
 .fs_hd p {
@@ -90,7 +89,7 @@ body {
   font-size: 20px;
   border: none;
   border-radius: 5px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btn_cov button:hover {
@@ -108,15 +107,13 @@ body {
 .sm {
   font-size: 12px;
   line-height: 5px !important;
-  
 }
 
 .txt_sd h3 {
   color: var(--main_bg);
   font-weight: 600;
   font-family: "Alice", serif;
-  
-} 
+}
 
 .txt_sd p {
   color: var(--main_bg);
@@ -131,7 +128,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-} 
+}
 
 .se_img {
   background-image: url("./assets/img/person.avif");
@@ -153,21 +150,21 @@ body {
 }
 
 @keyframes myAnim {
-	0% {
-		translate: 0;
-	}
-	25% {
-		transform: translate3d(1rem, 3rem, 0);
-    border-radius: 30% 70% 70% 30% / 30% 21% 79% 70% ;
-	}
-	50% {
-		transform: translate3d(-1rem, 3rem, 0);
-    border-radius: 30% 70% 70% 30% / 55% 76% 24% 45% ;
-	}
+  0% {
+    translate: 0;
+  }
+  25% {
+    transform: translate3d(1rem, 3rem, 0);
+    border-radius: 30% 70% 70% 30% / 30% 21% 79% 70%;
+  }
+  50% {
+    transform: translate3d(-1rem, 3rem, 0);
+    border-radius: 30% 70% 70% 30% / 55% 76% 24% 45%;
+  }
 
-	100% {
-		transform: translate3d(3rem, 3rem, 0);
-	}
+  100% {
+    transform: translate3d(3rem, 3rem, 0);
+  }
 }
 
 .se_bgg h1 {
@@ -183,7 +180,7 @@ body {
   padding: 23px 0;
 }
 
-.thd_hd h1  {
+.thd_hd h1 {
   color: white;
   font-family: "Alice", serif;
 }
@@ -194,7 +191,7 @@ body {
 }
 
 .cd_cv {
-  text-align: left; 
+  text-align: left;
 }
 
 .cd_hd {
@@ -208,7 +205,6 @@ body {
   background-color: rgb(52, 47, 47);
   height: 4px;
   bottom: -20px;
-  
 }
 
 .cd_hd h2 {
@@ -226,7 +222,12 @@ body {
   background-color: var(--main_bg);
   height: 700px;
   background-color: #000000;
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 10px ), repeating-linear-gradient( #50040455, #500404 );
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #000000 10px
+    ),
+    repeating-linear-gradient(#50040455, #500404);
 }
 
 .fo_t {
@@ -235,7 +236,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000
   font-size: 40px;
 }
 
-.fo_btn button{
+.fo_btn button {
   color: black;
   background-color: white;
   width: 80%;
@@ -283,8 +284,92 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000
   font-size: 20px;
 }
 
-.ls_b.badge{
+.ls_b.badge {
   display: inline !important;
   white-space: wrap;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .img_f {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+  }
+
+  .img_ff {
+    top: 90px;
+    left: 40%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .img_fff {
+    top: 230px;
+    width: 200px;
+    height: 200px;
+    left: -100px;
+  }
+
+  .se_img {
+    width: 400px;
+    height: 400px;
+
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .img_f {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 10px;
+  }
+
+  .img_ff {
+    top: 3px;
+    left: 60%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .img_fff {
+    top: 100px;
+    width: 150px;
+    height: 150px;
+    left: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fo_t {
+    font-size: 25px;
+  }
+  .img_f {
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    margin-top: 20px;
+  }
+
+  .img_ff {
+    top: 3px;
+    left: 55%;
+    width: 170px;
+    height: 170px;
+  }
+
+  .img_fff {
+    top: 120px;
+    width: 150px;
+    height: 150px;
+    left: 50px;
+  }
+
+  .se_img {
+    width: 350px;
+    height: 350px;
+  }
 }
